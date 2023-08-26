@@ -1,0 +1,27 @@
+
+package com.mycompany.poo_trabajo1;
+
+public class Pregunta_5 {
+    
+    public static void main(String[] args) {
+        double SUMA;
+        double x;
+        double y;
+        
+        SUMA = 0;
+        
+        x = 20;
+        
+        SUMA = SUMA + x;
+        
+        y=40;
+        
+        x= (x + Math.pow(y,2));
+        
+        SUMA = SUMA + (x/y);
+                        
+        System.out.println("El valor de la suma es: " + SUMA);        
+                
+                
+    }
+}
