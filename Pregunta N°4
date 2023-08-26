@@ -1,0 +1,27 @@
+
+package com.mycompany.poo_trabajo1;
+import java.util.Scanner;
+
+public class POO_Trabajo1 {
+
+    public static void main(String[] args) {
+        int juan;
+        int alberto;
+        int ana;
+        int mama;
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Ingrese la edad de Juan :");
+        
+        juan = entrada.nextInt();
+        alberto = 2*(juan/3) ;
+        ana = 4*(juan/3) ;
+        mama = juan + alberto + ana;
+    
+        System.out.println("La edad de Juan es:" + juan );
+        System.out.println("La edad de Alberto es:" + alberto );
+        System.out.println("La edad de Ana es:" + ana );
+        System.out.println("La edad de la mamá de Juan es:" + mama);
+        
+           
+    }
+}
