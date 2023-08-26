@@ -1,27 +1,32 @@
 
+
 package com.mycompany.poo_trabajo1;
 
 public class Pregunta_5 {
     
     public static void main(String[] args) {
+        //Definimos las variables en cuestión
         double SUMA;
         double x;
         double y;
         
+        //Le damos un valor inicial a la variable "SUMA"
         SUMA = 0;
-        
+        //Le damos un valor inicial a la variable "x"
         x = 20;
-        
+        //Realizamos la respectiva operación en donde se reasigna a la variable "SUMA" un nuevo valor
         SUMA = SUMA + x;
-        
+        //Le damos un valor inicial a la variable "y"
         y=40;
-        
+        //Realizamos la respectiva operación en donde se reasigna a la variable "x" un nuevo valor
+        //Adicionalmente, usamos la funcion Math.pow() para elevar y a la 2.
         x= (x + Math.pow(y,2));
-        
+        //Nuevamente realizamos la respectiva operación en donde se reasigna a la variable "SUMA" un nuevo valor
         SUMA = SUMA + (x/y);
-                        
+        //Imprimimos el valor final de la suma                
         System.out.println("El valor de la suma es: " + SUMA);        
                 
                 
     }
 }
+
