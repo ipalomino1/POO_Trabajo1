@@ -1,21 +1,23 @@
-
 package com.mycompany.poo_trabajo1;
 import java.util.Scanner;
 
 public class Pregunta_14 {
 
     public static void main(String[] args) {
+        //Definimos las variables como enteros, dado que son precios
         int VD1;
         int VD2;
         int VD3;
         int SALAR;
         int TOTVEN;
+        
+        //Como se trabajará con porcentajes, definimos como double por si corersponde algun decimal
         double PORVEN;
         double SALAR1;
         double SALAR2;
         double SALAR3;
 
-        
+        //Lectura de datos
         Scanner entrada = new Scanner(System.in);
         System.out.println("Ingrese el valor del departamento 1 :");
         VD1 = entrada.nextInt();
@@ -29,8 +31,12 @@ public class Pregunta_14 {
         System.out.println("Ingrese el salario que reciben los vendedores de cada departamento :");
         SALAR = entrada.nextInt();
        
+        //Definimos el total de la venta y dado el porcentaje, el valor.
+        
         TOTVEN = VD1 + VD2 + VD3 ;
         PORVEN = 0.33 * TOTVEN;
+        
+        //Inicio de operación con condicionales
         
         if (VD1 > PORVEN){
             SALAR1 = SALAR + 0.2 * SALAR;
@@ -52,8 +58,12 @@ public class Pregunta_14 {
             SALAR3 = SALAR;
         }
         
+        //Imprimimos el salario correspondiente de los vendedores de cada departamento.
+        
         System.out.println("El salario del vendedores departamento 1 :" +SALAR1 );
         System.out.println("El salario del vendedores departamento 2 :" +SALAR2 );
         System.out.println("El salario del vendedores departamento 3 :" +SALAR3 );
     }
 }
+
+
