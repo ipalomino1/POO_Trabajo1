@@ -5,12 +5,16 @@ import java.util.Scanner;
 public class Pregunta_12 {
 
     public static void main(String[] args) {
+        //Definimos las variables como enteros
         int NHT;
         int VHN;
         int HET;
         int HEE8;
         int SALARIO;
+        //Y posteriormente definimos como String a la variable NOM para almacenarla correctamente.
         String NOM;
+        
+        //Correspondiente lectura de datos
         
         Scanner entrada = new Scanner(System.in);
         System.out.println("Ingrese el nombre del trabajador :");
@@ -22,7 +26,9 @@ public class Pregunta_12 {
         System.out.println("Ingrese el valor de la hora :");
         VHN = entrada.nextInt();
         
-        if (NHT > 40){
+        //operamos con condicinoales
+        
+        if (NHT > 40){ 
             HET = NHT - 40;
             if (HET > 8){
                 HEE8 = HET -8;
@@ -35,6 +41,8 @@ public class Pregunta_12 {
         else {
             SALARIO = NHT * VHN;
         }
+        
+        //Imprimimos el correspondiente salario devengado con el nombre del trabajador en cuestión.
         
         System.out.println("El trabajador :" + NOM + ", devengó $"+SALARIO );
         
