@@ -2,7 +2,6 @@ package com.mycompany.poo_trabajo1;
 import java.util.Scanner;
 
 public class Pregunta_12 {
-
     public static void main(String[] args) {
         //Definimos las variables como enteros
         int NHT;
@@ -13,7 +12,6 @@ public class Pregunta_12 {
         //Y posteriormente definimos como String a la variable NOM para almacenarla correctamente.
         String NOM;
         //Correspondiente lectura de datos
-        
         Scanner entrada = new Scanner(System.in);
         System.out.println("Ingrese el nombre del trabajador :");
         NOM = entrada.nextLine();
