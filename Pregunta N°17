@@ -6,24 +6,33 @@ import java.util.Scanner;
 public class Pregunta_17 {
 
     public static void main(String[] args) {
+        //Definimos las variables como enteros, dado que son numeros naturales.
         int N;
         int NUM;
         int SUMA;
 
+        //Les damos valores iniciales a las dos variables en cuestión.
+        
         SUMA = 0;
         NUM = 1;
-        
+        //Lectura de datos
         Scanner entrada = new Scanner(System.in);
         System.out.println("Ingrese la cantidad de numeros naturales a sumar :");
         N = entrada.nextInt();    
+        
+        //Operamos con un "mientras" para que itere las veces que corresponda
         
         while (NUM <= N){
             SUMA = SUMA + NUM;
             NUM = NUM + 1;
         }
         
+        //Imprimimos la lectura de la suma de los N numeros
+        
         System.out.println("La suma es " + SUMA); 
           
     }
 }
+
+
 
