@@ -1,0 +1,29 @@
+
+package com.mycompany.poo_trabajo1;
+
+import java.util.Scanner;
+
+public class Pregunta_17 {
+
+    public static void main(String[] args) {
+        int N;
+        int NUM;
+        int SUMA;
+
+        SUMA = 0;
+        NUM = 1;
+        
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Ingrese la cantidad de numeros naturales a sumar :");
+        N = entrada.nextInt();    
+        
+        while (NUM <= N){
+            SUMA = SUMA + NUM;
+            NUM = NUM + 1;
+        }
+        
+        System.out.println("La suma es " + SUMA); 
+          
+    }
+}
+
